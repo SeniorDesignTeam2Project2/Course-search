@@ -15,14 +15,20 @@
       <div class="banner">Class search</div>
 
       <div id="csunlogo_container">
-        <img src="assets/ECS Horizontal 186+black.jpg" alt="CSUN" />
+        <img src="../assets/ECS Horizontal 186+black.jpg" alt="CSUN" />
       </div>
     </header>
   </body>
 </html>
 </template>
 
-<style lang="scss">
+<script>
+export default {
+  name: 'Header',
+}
+</script>
+
+<style scoped>
 html,
 body {
   background: white;
