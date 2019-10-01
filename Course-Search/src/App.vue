@@ -1,25 +1,45 @@
 <template>
   <div id="app">
-    <Header/>
+    <router-view/>
+    <router-view name="content"/>
   </div>
 </template>
 
 <script>
-import Header from './components/Header'
 export default {
-  name: 'App',
-  components: {
-    Header
-  }
+  name: 'App'
 }
 </script>
 
 <style>
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
 }
+
+html,
+body {
+  background: white;
+  margin: 0;
+}
+
+body {
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 100%;
+  width: 70%;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0;
+  background: white;
+  line-height: 1.8;
+}
+
+@media screen and (max-width: 1024px) {
+  body {
+    width: 100%;
+  }
+}
+
 </style>
