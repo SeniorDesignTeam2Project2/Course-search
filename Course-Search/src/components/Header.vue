@@ -20,6 +20,7 @@ export default {
   padding: 0.5% 0.4em;
   font-size: 150%;
   color: white;
+  text-align: left;
 }
 
 #csunlogo_container {
